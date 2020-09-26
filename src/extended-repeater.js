@@ -5,7 +5,7 @@ module.exports = function repeater(str, options) {
   options.addition = String(options.addition);
   
   const addition = (options.addition === 'undefined' ? '' : options.addition)
-                    .concat(options.additionSeparator || '+')    
+                    .concat(options.additionSeparator || '|')    
                     .repeat(options.additionRepeatTimes || 1)
                     .slice(0, -(options.additionSeparator || 0 ? options.additionSeparator.length : 1))
 
